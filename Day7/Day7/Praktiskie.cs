@@ -105,7 +105,7 @@ namespace Day7
             {
                 
                 Console.WriteLine("Palikusi {0} meiginajumi!", reizes);
-                reizes = reizes - 1;
+                reizes--;
 
                 Console.WriteLine("Ludzu miniet skaitli!");
                 skaititajs = Convert.ToInt16(Console.ReadLine());
