@@ -71,7 +71,28 @@ namespace Day7
                 
             }
         }
+        public void Tresais() // parveidot pirmo, ta lai izmantotu while ciklu 
+        {
+            //Izvadit summu skaitlu reizinajumam * 2 (skaitli no 1-9)
+            //t.i. (1*2) + (2*2) + (3*2) +...
+            Console.WriteLine("Ludzu ievadiet skaitli no 1 lidz 9");
+            int sakums = Convert.ToInt16(Console.ReadLine());
 
+            int iteracija = 1;
+
+            int Rez = 0;
+            while (iteracija < sakums +1)
+            {
+
+                Rez = Rez + (iteracija * 2);
+                iteracija++;
+                
+
+                Console.WriteLine("Test   "  + Rez);
+            }
+            Console.WriteLine("...Done   " + Rez );
+
+        }
        
 
     }
