@@ -10,7 +10,7 @@ namespace Day7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Izveleties uzdevumu- 1 vai 2 (3: Pirmais pasniedzeja versija)");
+            Console.WriteLine("Izveleties uzdevumu- 1 vai 2 ");
             string choice = Console.ReadLine();
             int ch = Convert.ToInt16(choice);
 
