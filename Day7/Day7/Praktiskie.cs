@@ -43,6 +43,7 @@ namespace Day7
 
                 if (sakums == 11)
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Pareizi!");
                     break;
                 }
@@ -50,12 +51,13 @@ namespace Day7
                 {
                     if (i == 5)
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Game Over!");
                         Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("<< Insert coin here>>");
-
                         break;
                     }
+                    
                     Console.WriteLine("Meiginiet velreiz!");
                     
                 }
