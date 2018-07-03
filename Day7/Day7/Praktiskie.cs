@@ -58,7 +58,7 @@ namespace Day7
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Game Over!");
-                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
                         Console.WriteLine("<< Insert coin here>>");
                         break;
                     }
