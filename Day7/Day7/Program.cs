@@ -10,7 +10,7 @@ namespace Day7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Izveleties uzdevumu- 1 vai 2");
+            Console.WriteLine("Izveleties uzdevumu- 1 vai 2 (3: Pirmais pasniedzeja versija)");
             string choice = Console.ReadLine();
             int ch = Convert.ToInt16(choice);
 
@@ -24,6 +24,7 @@ namespace Day7
                 case 2:
                     prak.Otrais();
                     break;
+               
                 default:
                     Console.WriteLine("Nepareiza ievade!");
                     break;

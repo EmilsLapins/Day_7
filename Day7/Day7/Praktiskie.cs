@@ -27,6 +27,8 @@ namespace Day7
             
         }
 
+        
+
         public void Otrais()
         {
             //Likt cilvekam meginat uzminet skaitli. Ja skaitlis sakrit ar 11, tad pareizi
@@ -35,8 +37,11 @@ namespace Day7
 
             
 
-            for (int i = 1; i <= 5; i++)
+            for (int i = 0; i < 5; i++)
             {
+                int reizes = 5 - i;
+                Console.WriteLine("Palikusi {0} meiginajumi!", reizes);
+
                 Console.WriteLine("Ludzu miniet skaitli!");
                 int sakums = Convert.ToInt16(Console.ReadLine());
 
@@ -49,7 +54,7 @@ namespace Day7
                 }
                 else 
                 {
-                    if (i == 5)
+                    if (i == 4)
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Game Over!");
@@ -57,8 +62,11 @@ namespace Day7
                         Console.WriteLine("<< Insert coin here>>");
                         break;
                     }
-                    
+
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Meiginiet velreiz!");
+                    Console.ResetColor();
+
                     
                 }
                 
