@@ -34,9 +34,7 @@ namespace Day7
             //Likt cilvekam meginat uzminet skaitli. Ja skaitlis sakrit ar 11, tad pareizi
             //Max meginajumu skaits - 5.
             //Ja 5 reizes nesanak, tad izvadit pazinojumu. 
-
             
-
             for (int i = 0; i < 5; i++)
             {
                 int reizes = 5 - i;
@@ -93,7 +91,48 @@ namespace Day7
             Console.WriteLine("...Done   " + Rez );
 
         }
-       
+
+       public void Ceturtais()
+
+        {
+
+            //Likt cilvekam meginat uzminet skaitli. Ja skaitlis sakrit ar 11, tad pareizi
+            //Max meginajumu skaits - 5.
+            //Ja 5 reizes nesanak, tad izvadit pazinojumu. 
+            int skaititajs = 0;
+            int reizes = 5;
+            do
+            {
+                
+                Console.WriteLine("Palikusi {0} meiginajumi!", reizes);
+                reizes = reizes - 1;
+
+                Console.WriteLine("Ludzu miniet skaitli!");
+                skaititajs = Convert.ToInt16(Console.ReadLine());
+
+                if ( skaititajs == 11)
+                {
+                    Console.WriteLine("Veiksmigi!");
+                    reizes = 0;
+                    break;
+                }
+                else
+                {
+                    if (reizes == 0)
+                    {
+                       
+                        Console.WriteLine("Game Over!");
+                      
+                        break;
+                    }
+
+                    Console.WriteLine("Meiginiet velreiz!");
+
+                }
+
+            } while (reizes > 0 );
+
+        }
 
     }
 }

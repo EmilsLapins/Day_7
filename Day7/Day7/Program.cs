@@ -10,7 +10,7 @@ namespace Day7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Izveleties uzdevumu- 1 vai 2 vai 3 vai 4 vai 5 ");
+            Console.WriteLine("Izveleties uzdevumu- 1 vai 2 vai 3 vai 4 vai 5 vai 6");
             string choice = Console.ReadLine();
             int ch = Convert.ToInt16(choice);
 
@@ -33,6 +33,9 @@ namespace Day7
                     break;
                 case 5:
                     prak.Tresais();
+                    break;
+                case 6:
+                    prak.Ceturtais();
                     break;
 
                 default:
